@@ -1,7 +1,8 @@
 # meshoptimizer
-meshoptimizer 是一个高效的网格优化库，通过多种技术减少3D网格数据的存储大小和提升渲染性能。它主要用于图形学和游戏开发领域，尤其是处理大量多边形的3D模型时，能够显著降低渲染负担，提高运行效率。
+meshoptimizer 是一个高效的网格优化库，通过多种技术减少3D网格数据的存储大小，提升渲染性能。它主要用于对3D模型的优化（素银优化，顶点缓存优化，过度绘制优化，顶点获取优化，顶点量化，阴影索引），尤其是处理大量多边形的3D模型时，能够显著降低渲染负担，提高运行效率。
 
 ## meshoptimizer使用场景
+gltf（Graphics Library Transmission Format）是一种免版税的规范，旨在提高应用程序传输和加载3D场景及模型的效率。
 OpenHarmony上引入meshoptimizer，主要用于对gltf中Ext_meshopt_compress扩展格式的解压缩。
 
 ## 目录结构
@@ -49,3 +50,22 @@ https://github.com/zeux/meshoptimizer
 
 ## 相关仓
 meshoptimizer
+
+## OpenHarmony中的使用
+### 面向对象
+系统应用的开发者，3D图形引擎相关开发者。
+### 指导参考
+```
+deps = ["//third_party/meshoptimizer:meshoptimizer"]
+```
+引入该三方库。
+```
+include "meshoptimizer.h"
+
+meshopt_decodeVertexBuffer();
+meshopt_decodeFilterOct();
+meshopt_decodeFilterQuat();
+meshopt_decodeFilterExp();
+meshopt_decodeIndexBuffer();
+```
+引入meshoptimizer.h头文件，使用相应的函数，函数具体指导参考：https://github.com/zeux/meshoptimizer

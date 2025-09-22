@@ -1,7 +1,8 @@
 # meshoptimizer
-Meshoptimizer is an efficient mesh optimization library that reduces the storage size of 3D mesh data and enhances rendering performance through various techniques. It is mainly used in the fields of graphics and game development, especially when dealing with 3D models containing a large number of polygons, it can significantly reduce the rendering burden and improve operational efficiency. 
+Mesh optimizer is an efficient mesh optimization library that reduces the storage size of 3D mesh data and improves rendering performance through various techniques. It is mainly used for optimizing 3D models (such as pixel silver optimization, vertex caching optimization, over drawing optimization, vertex acquisition optimization, vertex quantization, shadow indexing), especially when dealing with a large number of polygon 3D models, which can significantly reduce rendering burden and improve running efficiency.
 
 ## Use Cases of meshoptimizer
+Gltf (Graphics Library Transmission Format) is a royalty free specification aimed at improving the efficiency of application transmission and loading of 3D scenes and models.
 The introduction of meshoptimizer on OpenHarmony is mainly for decompressing the Ext_meshopt_compress extension format in gltf. 
 
 ## Directory Structure 
@@ -55,3 +56,21 @@ This project is subject to the license described in LICENCE.
 
 ## Related warehouse 
 meshoptimizer
+
+##Usage in OpenHarmony
+###Object oriented
+Developers of system applications and 3D graphics engines.
+###Guidance and reference
+```
+deps = ["//third_party/meshoptimizer:meshoptimizer"]
+```
+Introduce this third-party library.
+```
+include "meshoptimizer.h"
+meshopt_decodeVertexBuffer();
+meshopt_decodeFilterOct();
+meshopt_decodeFilterQuat();
+meshopt_decodeFilterExp();
+meshopt_decodeIndexBuffer();
+```
+Introduce the meshoptimizer. h header file and use the corresponding functions. For specific instructions on the functions, please refer to: https://github.com/zeux/meshoptimizer
