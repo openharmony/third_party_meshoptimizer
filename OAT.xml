@@ -5,7 +5,7 @@ MIT LISENSE
 
 <configuration>
     <oatconfig>
-        <licensefile></licensefile>
+        <licensefile>COPYING</licensefile>
         <policylist>
             <policy name="projectPolicy" desc="">
                 <policyitem type="license" name="MIT" path=".*" desc="MIT LICENSE"/>
@@ -16,12 +16,13 @@ MIT LISENSE
             <filefilter name="defaultFilter" desc="Files not to check">
                 <filteritem type="filename" name="*.obj" desc="3D model file"/>
                 <filteritem type="filename" name="*.glb" desc="3D model file"/>
+                <filteritem type="filename" name="*.git-blame-ignore-revs" desc="Third-party open-source software does not require testing."/>
                 <filteritem type="filepath" name="tools/.*" desc="Do not use the code in this folder."/>
                 <filteritem type="filepath" name="js/.*" desc="Do not use the code in this folder."/>
                 <filteritem type="filepath" name="gltf/.*" desc="Do not use the code in this folder."/>
                 <filteritem type="filepath" name="extern/.*" desc="Do not use the code in this folder."/>
                 <filteritem type="filepath" name="demo/.*" desc="Do not use the code in this folder."/>
-                <filteritem type="filepath" name="src/.*cpp" desc="The .cpp file and .h file have the same licensing header and copyright, with explantions provided in each file."/>
+                <filteritem type="filepath" name="src/.*" desc="Third-party open-source software does not require testing."/>
             </filefilter>
             <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
             </filefilter>
