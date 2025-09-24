@@ -1,0 +1,46 @@
+{
+    "name": "@ohos/meshoptimizer",
+    "description": "meshoptimizer",
+    "version": "6.0",
+    "license": "meshoptimizer license",
+    "publishAs": "code-segment",
+    "segment": {
+        "desPath": "third_party/meshoptimizer"
+    },
+    "dirs": {},
+    "scripts": {},
+    "licensePath": "LICENSES",
+    "readmePath": {
+        "en": "README_en"
+    },
+    "component": {
+        "name": "meshoptimizer",
+        "subsystem": "thirdparty",
+        "syscap": [],
+        "features": [],
+        "adapted_system_type": [
+            "small",
+            "mini",
+            "standard"
+        ],
+        "rom": "",
+        "ram": "",
+        "deps": {
+            "components": [],
+            "third_party": []
+        },
+        "build": {
+            "sub_component": [],
+            "inner_kits": [
+            {
+                "type": "so",
+                "name": "//third_party/meshoptimizer:meshoptimizer",
+                "header": {
+                "header_files": [],
+                "header_base": "//third_party/meshoptimizer"
+                }   
+            }],
+            "test": []
+        }
+    }
+}
