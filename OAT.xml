@@ -18,6 +18,7 @@ MIT LISENSE
                 <filteritem type="filename" name="*.glb" desc="3D model file"/>
                 <filteritem type="filename" name="*.git-blame-ignore-revs" desc="Third-party open-source software does not require testing."/>
                 <filteritem type="filepath" name="tools/.*" desc="Do not use the code in this folder."/>
+                <filteritem type="filepath" name="testcase/.*" desc="Third-party open-source software does not require testing."/>
                 <filteritem type="filepath" name="js/.*" desc="Do not use the code in this folder."/>
                 <filteritem type="filepath" name="gltf/.*" desc="Do not use the code in this folder."/>
                 <filteritem type="filepath" name="extern/.*" desc="Do not use the code in this folder."/>
