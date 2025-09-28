@@ -23,7 +23,7 @@
             "mini",
             "standard"
         ],
-        "rom": "",
+        "rom": "125KB",
         "ram": "",
         "deps": {
             "components": [],
