@@ -1,0 +1,35 @@
+# Copyright (c) 2021 Huawei Device Co., Ltd.
+
+# MIT LICENSE
+
+import("//build/ohos.gni")
+
+config("meshoptimizer_headers_config") {
+    include_dirs = ["src"]
+}
+
+ohos_shared_library("meshoptimizer") {
+    sources = [
+        "src/meshoptimizer.h",
+        "src/allocator.cpp",
+        "src/clusterizer.cpp",
+        "src/indexcodec.cpp",
+        "src/indexgenerator.cpp",
+        "src/overdrawanalyzer.cpp",
+        "src/overdrawoptimizer.cpp",
+        "src/quantization.cpp",
+        "src/simplifier.cpp",
+        "src/spatialorder.cpp",
+        "src/stripifier.cpp",
+        "src/vcacheanalyzer.cpp",
+        "src/vcacheoptimizer.cpp",
+        "src/vertexcodec.cpp",
+        "src/vertexfilter.cpp",
+        "src/vfetchanalyzer.cpp",
+        "src/vfetchanalyzer.cpp",
+    ]
+    public_configs = [ ":meshoptimizer_headers_config" ]
+
+    part_name = "meshoptimizer"
+    subsystem_name = "thirdparty"
+}
