@@ -1,5 +1,5 @@
 # meshoptimizer
-Mesh optimizer is an efficient mesh optimization library that reduces the storage size of 3D mesh data and improves rendering performance through various techniques. It is mainly used for optimizing 3D models (such as pixel silver optimization, vertex caching optimization, over drawing optimization, vertex acquisition optimization, vertex quantization, shadow indexing), especially when dealing with a large number of polygon 3D models, which can significantly reduce rendering burden and improve running efficiency.
+Mesh optimizer is an efficient mesh optimization library that reduces the storage size of 3D mesh data and improves rendering performance through various techniques. It is mainly used for optimizing 3D models (such as index Optimization, vertex caching optimization, over drawing optimization, vertex acquisition optimization, vertex quantization, shadow indexing), especially when dealing with a large number of polygon 3D models, which can significantly reduce rendering burden and improve running efficiency.
 
 ## Use Cases of meshoptimizer
 Gltf (Graphics Library Transmission Format) is a royalty free specification aimed at improving the efficiency of application transmission and loading of 3D scenes and models.
