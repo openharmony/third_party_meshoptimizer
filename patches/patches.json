@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "project":"graphic_graphic_3d",
+            "path":"foundation/graphic/graphic_3d",
+            "pr_url":"https://gitcode.com/openharmony/graphic_graphic_3d/pull/341"
+        },
+        {
+            "project":"xts_acts",
+            "path":"test/xts/acts",
+            "pr_url":"https://gitcode.com/openharmony/xts_acts/pull/30712"
+        }
+    ]
+}
