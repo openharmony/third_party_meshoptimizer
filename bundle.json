@@ -5,7 +5,7 @@
     "license": "MIT license",
     "publishAs": "code-segment",
     "segment": {
-        "desPath": "third_party/meshoptimizer"
+        "destPath": "third_party/meshoptimizer"
     },
     "dirs": {},
     "scripts": {},
