@@ -1,11 +1,11 @@
 {
     "name": "@ohos/meshoptimizer",
-    "description": "meshoptimizer",
-    "version": "6.0",
-    "license": "meshoptimizer license",
+    "description": "Mesh optimizer is an efficient mesh optimization library that reduces the storage size of 3D mesh data and improves rendering performance through various techniques.",
+    "version": "6.1",
+    "license": "MIT license",
     "publishAs": "code-segment",
     "segment": {
-        "desPath": "third_party/meshoptimizer"
+        "destPath": "third_party/meshoptimizer"
     },
     "dirs": {},
     "scripts": {},
@@ -19,12 +19,10 @@
         "syscap": [],
         "features": [],
         "adapted_system_type": [
-            "small",
-            "mini",
             "standard"
         ],
         "rom": "125KB",
-        "ram": "",
+        "ram": "938KB",
         "deps": {
             "components": [],
             "third_party": []
@@ -36,7 +34,7 @@
                 "type": "so",
                 "name": "//third_party/meshoptimizer:meshoptimizer",
                 "header": {
-                "header_files": [],
+                "header_files": ["src/meshoptimizer.h"],
                 "header_base": "//third_party/meshoptimizer"
                 }   
             }],
